@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Ejercicio3;
+
+/**
+ *
+ * @author bra
+ */
+public class Main {
+    public static void main(String[] args) {
+
+        MetodoPago metodo = new PagoTarjeta();
+        // también puedes usar: new PagoPaypal();
+
+        ProcesadorPago procesador = new ProcesadorPago(metodo);
+
+        procesador.procesar(50000);
+    }
+}
